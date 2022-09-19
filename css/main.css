@@ -172,8 +172,8 @@ header>nav>section {
 
 div#content-network {
 	position: absolute;
-	top: 17px;
-	right: 210px;
+    top: 70px;
+    right: 9px;
 }
 
 div#content-network div {
