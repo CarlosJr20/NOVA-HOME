@@ -1,0 +1,691 @@
+/*
+INDEX
+	- SWIPER
+		- NEWS ROTATOR - HOME
+		- SCHEDULE
+		- ADMISSIONS
+	- SPONSORS
+	- OTHERS
+	- LINKS
+	- SCHEDULE VIDEO
+*/
+
+/*-----------------------------------------------------------  SWIPER --------------------------*/
+
+/*@media screen and (max-width:649px) { .swiper-pagination { display: none; } }*/
+
+@media screen and (min-width: 1180px) {
+	#swiper-top {
+		min-height: 454px;
+	}
+}
+
+#swiper-top {
+	position: relative;
+}
+
+.swiper-slide {
+	cursor: grab;
+	border: solid 1px var(--gray2);
+	margin-left: -2px;
+}
+
+.swiper-button-prev {
+	background-image: none;
+}
+
+.swiper-button-next {
+	background-image: none;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 34px;
+}
+
+.swiper-button-prev::before {
+	content: "\f053";
+}
+
+.swiper-button-next::before {
+	content: "\f054";
+}
+
+#pg-bar {
+	bottom: 0;
+	/*background-color: rgba(0,53,54,0.5);*/
+	background-color: rgba(234, 234, 234, 0.5);
+	width: 100%;
+	padding: 5px 0;
+	position: absolute;
+	height: 20px;
+	display: block;
+	z-index: 900;
+}
+
+#swiper-top .swiper-pagination {
+	bottom: 5px;
+	z-index: 990;
+}
+
+#swiper-top .swiper-pagination .swiper-pagination-bullet {
+	background-color: var(--gray3);
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1 !important;
+	background: var(--color_pl1) !important;
+}
+
+/*.swiper-pagination-bullet {
+	background: white;
+	opacity: .4;
+}
+*/
+
+#swiper-top div.swiper-slide {
+	background-size: cover;
+}
+
+#swiper-top .swiper-button-prev::before,
+#swiper-top .swiper-button-next::before {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*--------------------------------------------------------------  CHURCH WELCOME  --------------------*/
+@media screen and (max-width: 700px) {
+	.church-welcome {
+		height: 50vw !important;
+		background-position: center top !important;
+		background-size: 100% !important;
+		background-attachment: inherit !important;
+	}
+
+	img#sjn-welcome {
+		width: 200px;
+		float: right;
+	}
+}
+
+.church-welcome {
+	background: url(/ctm/31250/projects/SJN/gallery/2022/09/aquarela-3.jpg) no-repeat center top;
+	background-size: cover;
+	height: 520px;
+}
+
+.church-welcome section .content {
+	position: relative;
+}
+
+.church-welcome section .content img#sjn-welcome {
+	position: relative;
+	top: 20px;
+	transition: all 2s linear;
+	animation: welcome-animated 1 2s linear;
+}
+
+@keyframes welcome-animated {
+	0% { opacity: 0; top: 0; }
+	50% { opacity: 0; top: 0; }
+	100% { opacity: 1; }
+}
+
+/*-----------------------------------------------------------  NEWS ROTATOR - HOME -------------------*/
+
+#hm_news {
+	padding-top: 40px;
+}
+
+#news_rotator {
+	overflow: hidden;
+	margin-bottom: 50px;
+	padding: 0 10px;
+}
+
+#news_rotator a {
+	display: block;
+	overflow: hidden;
+}
+
+#news_rotator img {
+	width: 100%;
+}
+
+#news_rotator p.title {
+	color: black;
+	font-weight: 500;
+	font-size: 17px !important;
+	padding: 0 20px 20px;
+	line-height: initial;
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	margin-top: 20px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 40px;
+}
+
+#news_rotator p.subtitle {
+	display:  none;
+	color: var(--color_ad1);
+	font-size: 13px;
+	padding: 0 20px 30px;
+	font-family: 'Work Sans', sans-serif;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+.summary {
+	display: none;
+}
+
+#news-rotator01 .swiper-pagination {
+	margin-top: 20px;
+	position: static;
+}
+
+#news-rotator01 .swiper-pagination .swiper-pagination-bullet {
+	background-color: var(--gray3);
+	border-radius: initial;
+}
+/*-----------------------------------------------------------  TOP HOME   ------------------*/
+
+.wrap_home{
+	background: url(../images/church.jpg) top center no-repeat;
+	background-size: cover;
+}
+
+.wrap_home section {
+	height: 460px;
+}
+
+#top-video video {
+	object-fit: cover;
+	width: 100%;
+	height: 500px;
+}
+
+.wrap_home img{	
+	position: absolute;
+	bottom: 0;
+	margin-left: -15px;
+	width: 210px;
+}
+
+@media screen and (max-width: 1179px) {
+
+
+	.wrap_home img {
+		display: none;
+	}
+	
+	.vmenu01 {
+		width: initial !important;
+		margin: 0 auto !important;
+	}
+
+	section.has_aside aside {
+		max-width: 600px;
+		margin: 0 auto !important;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.wrap_home img {
+	-webkit-animation: fadeIn 3s ease-in-out;
+	-moz-animation: fadeIn 3s ease-in-out;
+	-o-animation: fadeIn 3s ease-in-out;
+	animation: fadeIn 3s ease-in-out;
+}
+
+/*---------------------------------------------------------  SCHEDULE  -----------------*/
+@media screen and (min-width: 1180px) {
+	.hm_schedule .content .schedule-home {
+		position: absolute;
+		height: 100%;
+		right: 0;
+	}
+}
+
+@media screen and (min-width: 880px) and (max-width: 1179px) {
+	.hm_schedule .content .schedule-home {
+		position: absolute;
+		height: 100%;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 879px) {
+	.hm_schedule .content img.imgL { display:  none; }
+
+	.hm_schedule .content .schedule-home {
+		margin: 0 auto 40px;
+	}
+}
+
+.hm_schedule {
+	background: var(--color_a) url('http://sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/06/church-3.jpg') no-repeat center;
+	background-size: cover;
+	background-blend-mode: luminosity;
+	background-attachment: fixed;
+}
+
+.hm_schedule .content {
+	position: relative;
+	max-width: 850px;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.hm_schedule .content .schedule-home {
+	background: rgba(255,255,255,0.5);
+	/* border-left: 5px solid white;
+	border-right: 5px solid white; */
+	max-width: 500px;
+	width: 100%;
+	padding: 50px 20px;
+}
+
+.hm_schedule .content img.imgL { margin-bottom: 0; }
+
+.hm_schedule .content .schedule-home h1 {
+	font-size: 36px;
+	font-weight: 500;
+	color: black;
+}
+
+.hm_schedule .content .schedule-home table.default {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+}
+
+.hm_schedule .content .schedule-home tr th {
+	color: white;
+	font-weight: 700;
+}
+
+a.btn-watch {
+	max-width: 260px;
+    width: 100%;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: var(--color_p);
+    color: white !important;
+    padding: 5px 0;
+    opacity: 1;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a.btn-watch:hover {
+	background: var(--color_pl2);
+}
+
+.page-boxes {
+	padding: 50px 0 40px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.page-boxes .boxes a.fx_4 {
+	position: relative;
+	height: 378px;
+	max-width: 260px;
+	background-size: 260px;
+	background-position: center;
+	transition: all 0.2s ease-in-out;
+}
+
+.page-boxes .boxes a.fx_4:hover {
+	margin-top: -10px;
+	background-size: 280px;
+	/* box-shadow: 0px 5px 10px rgba(0,0,0,0.7); */
+	transition: all 0.2s ease-in-out;
+}
+
+.page-boxes .boxes a.fx_4 div {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.45);
+}
+
+/*.page-boxes .boxes a.fx_4 div p {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 700;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 2px #222;
+	color: white;
+}*/
+
+
+/*---------------------------------------------------------  SCHEDULE_2  -----------------*/
+@media screen and (min-width: 1180px) {
+	.hm_schedule2 .content .schedule-home {
+		position: absolute;
+		height: 100%;
+		right: 0;
+	}
+	.hm_schedule2 {
+	background: #2a698a url(http://sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/bg_lay3.jpg) no-repeat center;
+	;;;;background-size: cover;;;;;
+	background-blend-mode: soft-light;
+	background-attachment: fixed;
+	
+	color: white;
+	font-family: "Work Sans", sans-serif;
+    padding: 50px 0 20px;
+    
+}
+}
+
+@media screen and (min-width: 880px) and (max-width: 1179px) {
+	.hm_schedule2 .content .schedule-home {
+		position: absolute;
+		height: 100%;
+		right: 0;
+	}
+	.hm_schedule2 {
+	background: #2a698a url(http://sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/bg_lay3.jpg) no-repeat center;
+	background-size: 120%;
+	background-blend-mode: soft-light;
+	background-attachment: fixed;
+	
+	color: white;
+	font-family: "Work Sans", sans-serif;
+}
+}
+
+@media screen and (max-width: 879px) {
+	.hm_schedule2 .content img.imgL { display:  none; }
+
+	.hm_schedule2 .content .schedule-home {
+		margin: 0 auto 40px;
+	}
+	.hm_schedule2 {
+	background: #2a698a url(http://sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/bg_lay3.jpg) no-repeat center;
+    background-size: cover;
+	background-blend-mode: soft-light;
+	background-attachment: fixed;
+	
+	color: white;
+	font-family: "Work Sans", sans-serif;
+}
+}
+
+
+
+.hm_schedule2 .content {
+	position: relative;
+	max-width: 850px;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 34px;
+}
+
+.hm_schedule2 .content .schedule-home {
+	background: rgb(4 4 4 / 50%);
+	/* border-left: 5px solid white;
+	border-right: 5px solid white; */
+	max-width: 500px;
+	width: 100%;
+	padding: 50px 20px;
+}
+
+.hm_schedule2 .content img.imgL { margin-bottom: 0; }
+
+.hm_schedule2 .content .schedule-home h1 {
+	font-size: 36px;
+	font-weight: 500;
+	color: white !important;
+}
+
+.hm_schedule2 h1{
+	font-size: 50px;
+	color: white;
+	/* padding-top: 50px; */
+	/* padding-bottom: 30px; */
+	text-align: center;
+}
+
+.hm_schedule2 .content .schedule-home table.default {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	
+}
+
+.hm_schedule2 .content .schedule-home tr th{
+	color: white !important;
+	font-weight: 700;
+}
+
+.hm_schedule2 table.default th {
+	color:
+	white;
+	font-size: 24px;
+	font-weight: 500;
+	border-bottom: none;
+	padding-bottom: 20px;
+}
+
+a.btn-watch {
+	max-width: 260px;
+	width: 100%;
+	display: block;
+	margin: 30px auto 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	background: var(--color_p);
+	color: white !important;
+	padding: 9px 0px;
+	opacity: 1;
+	font-family: 'Work Sans', sans-serif;
+}
+
+a.btn-watch:hover {
+	background: var(--color_pl2);
+}
+
+.page-boxes {
+	padding: 50px 0 40px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.page-boxes .boxes a.fx_4 {
+	position: relative;
+	height: 378px;
+	max-width: 260px;
+	background-size: 260px;
+	background-position: center;
+	transition: all 0.2s ease-in-out;
+	margin: 0px 24px 0px 0px;
+}
+
+.page-boxes .boxes a.fx_4:hover {
+	margin-top: -10px;
+	background-size: 280px;
+	/* box-shadow: 0px 5px 10px rgba(0,0,0,0.7); */
+	transition: all 0.2s ease-in-out;
+}
+
+.page-boxes .boxes a.fx_4 div {
+	/* margin: 0px 0px 0px 0px; */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgb(0 0 0 / 25%);
+}
+
+.page-boxes .boxes a.fx_4 div p {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 38px;
+	line-height: 44px;
+	font-weight: 700;
+	margin-bottom: 0;
+	text-shadow: none;
+	color: white;
+	/* font-weight: bold; */
+}
+
+
+
+/*-----------------------------------------------------------  HOME   ------------------*/
+
+main section.has_aside {
+	background: none !important;
+}
+
+section.has_aside aside {
+	background-color: rgba(176, 193, 212, 0.9);
+}
+
+aside {
+	width: initial;
+	min-width: 300px;
+}
+
+aside div.one_third {
+	margin:10px 0;
+	padding:10px;
+}
+
+.mass_schedule h1 {
+	text-align: center;
+	margin: 5px 0 15px 0;
+	font-size: 20px;
+}
+
+.mass_schedule p {
+	font-style: italic;
+	margin-bottom: 10px;
+	line-height: 22px;
+	font-size: 13px;
+}
+
+#hm_news {
+	background-color: white;
+	padding-bottom: 20px;
+	font-family: "Work Sans", sans-serif;
+}
+
+#hm_news h1{
+	text-align: center;
+}
+
+/* ---------------- DIRECTORIO  ---------------------------- */
+/* @media screen and (min-width: 880px) {
+	.directory {
+		background: url(../images/bg-directory-home.png) center right -50px no-repeat;
+		background-size: 800px;
+	}
+}
+
+@media screen and (max-width: 879px) {
+	.directory {
+		background: none;
+	}
+} */
+
+.directory {
+	padding: 40px 0 30px;
+	background:
+		/*url(../images/bg-hm-ministries.png) repeat-x center bottom,*/
+		url(../images/bg-hm-ministries-01.png) center center;
+	background-size: 400px;
+	font-family: "Work Sans", sans-serif;
+}
+
+.directory .content {
+	background: transparent;
+}
+
+.directory .content h1 {
+	text-align: center;
+}
+
+/* .box-list-ministries .fx_2,
+.box-list-ministries .fx_3,
+.box-list-ministries .fx_4 {
+	background: rgba(220,220,220,0.2);
+} */
+
+.box-list-ministries {
+	margin-top: 30px;
+}
+
+.box-list-ministries table.default {
+	max-width: 350px;
+	max-height: 240px;
+	height: 100%;
+	margin: 10px auto;
+	background: rgba(0,0,0,0.04);
+}
+
+.box-list-ministries table.default th {
+	background: var(--color_pl1);
+	width: 40px;
+	border-bottom: 0;
+	vertical-align: top;
+	padding-top: 15px;
+}
+
+.box-list-ministries table.default th span {
+	writing-mode: vertical-lr;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    text-orientation: upright;
+}
+
+.box-list-ministries table.default th span i {
+	font-size: 20px;
+}
+
+
+
+/* .hm-directory-tables {
+	margin-top: 30px;
+}
+
+.hm-directory-tables h2 {
+	color: white;
+	font-size: 0.9em;
+} 

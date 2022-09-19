@@ -1,0 +1,32 @@
+.new-header#logo{
+    margin-top: 27px !important;
+    margin-left: -52px;
+}
+
+.new-header#content-network {
+    position: absolute;
+    top: 70px;
+    right: 9px;
+}
+
+#new-header.button{
+
+    border-color: #044565;
+    color: var(--white);
+    background-color: #044565;
+    float: right !important;
+    padding: 0px 25px 0px 25px !important;
+    margin-right: 5px;
+}
+
+header#new-header{
+    position: relative;
+    background: #ececec;
+}
+
+header nav .new-header{
+    background-color: #ececec !important;
+    /* border-bottom: 3px solid var(--black); */
+    color: #000 !important;
+}
+
