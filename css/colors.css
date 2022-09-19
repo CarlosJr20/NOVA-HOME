@@ -1,0 +1,755 @@
+
+
+/*-----------------------------------------------------------  PAGE RESET ----------------------*/
+:root {
+    --bg_hd: #6a6a6a;
+    --tx_hd: #fff;
+    --aa_hd: #000;
+    --ah_hd: #000;
+    --h1_hd: #000;
+    --h2_hd: #000;
+    --h3_hd: #000;
+
+	--color_pd5: hsl(1, 69%, 5%);
+    --color_pd4: hsl(1, 69%, 7.6%);
+    --color_pd3: hsl(1, 69%, 10.2%);
+    --color_pd2: hsl(1, 69%, 12.8%);
+    --color_pd1: hsl(1, 69%, 15.4%);
+    --color_p: hsl(1, 81%, 41%);
+    --color_pl1: hsl(1, 69%, 33.4%);
+    --color_pl2: hsl(1, 69%, 48.8%);
+    --color_pl3: hsl(1, 69%, 64.2%);
+    --color_pl4: hsl(1, 69%, 79.6%);
+    --color_pl5: hsl(1, 69%, 95%);
+
+    --color_ad5: hsl(1, 70%, 5%);
+    --color_ad4: hsl(1, 70%, 11.8%);
+    --color_ad3: hsl(1, 70%, 18.6%);
+    --color_ad2: hsl(1, 70%, 25.4%);
+    --color_ad1: hsl(1, 70%, 32.2%);
+    --color_a: hsl(211, 64%, 52%);
+    --color_al1: hsl(1, 70%, 50.2%);
+    --color_al2: hsl(1, 70%, 61.4%);
+    --color_al3: hsl(1, 70%, 72.6%);
+    --color_al4: hsl(1, 70%, 83.8%);
+    --color_al5: hsl(1, 70%, 95%);
+
+    --color_cd5: hsl(229, 31%, 5%);
+    --color_cd4: hsl(229, 31%, 11.8%);
+    --color_cd3: hsl(229, 31%, 18.6%);
+    --color_cd2: hsl(229, 31%, 25.4%);
+    --color_cd1: hsl(229, 31%, 32.2%);
+    --color_c: hsl(229, 31%, 52%);
+    --color_cl1: hsl(229, 31%, 50.2%);
+    --color_cl2: hsl(229, 31%, 61.4%);
+    --color_cl3: hsl(229, 31%, 72.6%);
+    --color_cl4: hsl(229, 31%, 83.8%);
+    --color_cl5: hsl(229, 31%, 95%);
+
+}
+
+/*-----------------------------------------------------------  HEADER --------------------------*/
+header nav {
+	background-color: #ececec;
+	/* border-bottom: 3px solid var(--black); */
+	color: #000;
+}
+header a { color: var(--color_pd3); }
+header a:hover { color: var(--color_a); }
+
+#top_buttons a { border: 1px solid var(--color_pd3); }
+#top_buttons a:hover { border: 1px solid var(--color_a); }
+
+
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    .fadeImg {
+    opacity:0;
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out; 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;}
+
+@media screen and (min-width:1180px) {
+    .img_home_test {
+        background-image: url(https://www.sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/aquarela-2.jpg);
+        height: 603px;
+        position: relative;
+        /* background-size: cover; */
+        background-size: 101%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+     
+    .fadeImg-delay {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        -o-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        width: 60%;
+        /* text-align: right; */
+        margin: 67px 0px 0px 480px;
+    }
+    
+
+}
+@media screen and (min-width:880px) and (max-width:1179px) {
+
+    .img_home_test {
+        background-image: url(https://www.sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/aquarela-2.jpg);
+        height: 603px;
+        position: relative;
+        /* background-size: cover; */
+        background-size: 101%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+     
+    .fadeImg-delay {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        -o-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        width: 60%;
+        /* text-align: right; */
+        margin: 97px 0px 0px 304px;
+    }
+
+}
+@media screen and (max-width:879px) {
+
+    .img_home_test {
+        background-image: url(https://www.sjn-miami.org/ctm/31250/projects/SJN/gallery/2022/09/aquarela-2.jpg);
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;height: 293px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+        position: relative;
+        /* background-size: cover; */
+        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;background-size: 200%;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+        ;;;;;;;;;;width: 100%;;;;;;;;;;;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+     
+    .fadeImg-delay {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        -o-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        width: 80%;
+        /* text-align: right; */
+        margin: 42px 0px 0px 72px;
+        /* background-size: 37px; */
+    }
+
+
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------  BODY --------------------------*/
+
+body { color: black; }
+
+a, a:visited { color: var(--bg_hd)}
+
+a:hover { color: var(--color_p)}
+
+.content h1 { color: var(--black); }
+
+.content h2 { color: var(--color_p); }
+
+.content h3 { color: var(--color_c); }
+
+.content h4 { color: var(--color_ad2); }
+
+ul li {  }
+
+ul li::before { color: var(--color_a); }
+
+blockquote {
+    color: var(--color_pl2);
+    border-color: var(--color_pl1);
+}
+
+.content blockquote p {
+    color: var(--color_pl2);
+}
+/*-----------------------------------------------------------  FOOTER --------------------------*/
+
+footer {
+    background: #044464;
+    color: white;
+}
+
+footer section.website {
+    background: #044464 url(../images/bg-directory-home.png) center left no-repeat;
+    background-size: 400px;
+    background-blend-mode: overlay;
+}
+
+footer a { color:white !important; }
+footer a:hover { color: var(--color_al1) !important; }
+footer h1 { color: var(--color1d); }
+footer h2 { color: var(--color1d); }
+footer h3 { color: var(--color1d); }
+
+
+.wrap_admin { border-top: 1px solid var(--color_p); }
+.wrap_admin p, 
+.wrap_admin a { color: var(--white); }
+
+.wrap_admin a:hover { color: var(--color_a); }
+
+/*-----------------------------------------------------------  BG1D --------------------------*/
+.bg1d { 
+    background-color: var(--color_pd3); 
+    color: var(--white);
+}
+.bg1d a { color: var(--color_al1); }
+.bg1d a:hover { color: var(--color_al2); }
+.bg1d h1 { color: var(--color_pl3); }
+.bg1d h2 { color: var(--color_al1); }
+.bg1d h3 { color: var(--white); }
+
+.bg1d .content ul li::before { color: var(--color_al1); }
+
+/*-----------------------------------------------------------  BG2D --------------------------*/
+.bg2d { 
+    background-color: var(--color_a); 
+    color: var(--white);
+}
+.bg2d a { color: var(--color_pl1); }
+.bg2d a:hover { color: var(--color_pd2); }
+.bg2d h1 { color: var(--color_pd2); }
+.bg2d h2 { color: var(--color_ad3); }
+.bg2d h3 { color: var(--white); }
+
+.bg2d .content ul li::before { color: var(--color_pd2); }
+
+/*-----------------------------------------------------------  BG3D --------------------------*/
+.bg3d { 
+    background-color: var(--color_c); 
+    color: var(--white);
+}
+.bg3d a { color: var(--color_cl3); }
+.bg3d a:hover { color: var(--color_cl3); }
+.bg3d h1 { color: var(--color_cl5); }
+.bg3d h2 { color: var(--color_cl4); }
+.bg3d h3 { color: var(--white); }
+
+.bg3d .content ul li::before { color: var(--color_cd5); }
+
+/*-----------------------------------------------------------  BG1L --------------------------*/
+.bg1l { 
+    background-color: var(--color_pl5); 
+    color: var(--black);
+}
+.bg1l a { color: var(--color_a); }
+.bg1l a:hover { color: var(--color_al2); }
+.bg1l h1 { color: var(--color_p); }
+.bg1l h2 { color: var(--color_a); }
+.bg1l h3 { color: var(--white); }
+
+.bg1l .content ul li::before { color: var(--color_a); }
+
+
+/*-----------------------------------------------------------  BG2L --------------------------*/
+.bg2l { 
+    background-color: var(--color_al5); 
+    color: var(--black);
+}
+.bg2l a { color: var(--color_p); }
+.bg2l a:hover { color: var(--color_pl2); }
+.bg2l h1 { color: var(--color_p); }
+.bg2l h2 { color: var(--color_a); }
+.bg2l h3 { color: var(--white); }
+
+.bg2l .content ul li::before { color: var(--color_p); }
+
+
+/*-----------------------------------------------------------  BG3L --------------------------*/
+.bg3l { 
+    background-color: var(--color_cl4); 
+    color: var(--white);
+}
+.bg3l a { color: var(--color_cd3); }
+.bg3l a:hover { color: var(--color_cd3); }
+.bg3l h1 { color: var(--color_cd5); }
+.bg3l h2 { color: var(--color_cd4); }
+.bg3l h3 { color: var(--white); }
+
+.bg3l .content ul li::before { color: var(--color_cd5); }
+
+/*-----------------------------------------------------------  ASIDE - PD --------------------------*/
+.asidebox.pd { 
+    background-color: var(--color_pd3); 
+    color: var(--white);
+}
+
+.asidebox.pd a { color: var(--color_pl2); }
+
+.asidebox.pd a:hover { color: var(--color_pl1); }
+
+.asidebox.pd h1 { color: var(--color_pl3); }
+
+.asidebox.pd ul li::before { color: var(--color_pl3); }
+
+/*-----------------------------------------------------------  ASIDE - AD --------------------------*/
+.asidebox.ad { 
+    background-color: var(--color_a); 
+    color: var(--white);
+}
+
+.asidebox.ad a { color: var(--color_ad3); }
+
+.asidebox.ad a:hover { color: var(--color_ad2); }
+
+.asidebox.ad h1 { color: var(--color_al4); }
+
+.asidebox.ad ul li::before { color: var(--color_al3); }
+
+/*-----------------------------------------------------------  ASIDE - CD --------------------------*/
+.asidebox.cd { 
+    background-color: var(--color_c); 
+    color: var(--white);
+}
+.asidebox.cd a { color: var(--color_cl3); }
+
+.asidebox.cd a:hover { color: var(--color_cl3); }
+
+.asidebox.cd h1 { color: var(--color_cl3); }
+
+.asidebox.cd ul li::before { color: var(--color_cd3); }
+
+/*-----------------------------------------------------------  ASIDE - PL --------------------------*/
+.asidebox.pl { 
+    background-color: var(--color_pl5); 
+    color: var(--black);
+}
+
+.asidebox.pl a { color: var(--color_pl2); }
+
+.asidebox.pl a:hover { color: var(--color_pl1); }
+
+.asidebox.pl h1 { color: var(--color_p); }
+
+.asidebox.pl ul li::before { color: var(--color_p); }
+
+
+/*-----------------------------------------------------------  ASIDE - AL --------------------------*/
+.asidebox.al { 
+    background-color: var(--color_al5); 
+    color: var(--black);
+}
+.asidebox.al a { color: var(--color_al2); }
+
+.asidebox.al a:hover { color: var(--color_al3); }
+
+.asidebox.al h1 { color: var(--color_a); }
+
+.asidebox.al ul li::before { color: var(--color_a); }
+
+
+/*-----------------------------------------------------------  ASIDE - CL --------------------------*/
+.asidebox.cl { 
+    background-color: var(--color_cl4); 
+    color: var(--black);
+}
+.asidebox.cl a { color: var(--color_cl1); }
+
+.asidebox.cl a:hover { color: var(--color_cl2); }
+
+.asidebox.cl h1 { color: var(--color_c); }
+
+.asidebox.cl ul li::before { color: var(--color_c); }
+
+/*-----------------------------------------------------------  TOP PAGE  -----------------------*/
+#top_page .transparent {
+	background-color: rgba(255,255,255,.4);
+	border-top: 1px solid rgba(255,255,255,0.45);
+}
+
+#top_page h1 { color: white; }
+
+/*-----------------------------------------------------------  DEFAULT TABLE   -----------------*/
+
+/*TABLE COLOR P*/
+table.default.color_p caption { color: var(--color_pd1); }
+
+table.default.color_p td { border-bottom: 1px solid var(--gray2); }
+
+table.default.color_p thead th {
+    background: var(--color_pl5);
+    border-top: 1px solid var(--color_pd1);
+    border-bottom: 1px solid var(--color_pd1);
+    color: var(--color_pd1);
+}
+
+table.default.color_p thead td { background: transparent; }
+
+table.default.color_p tfoot th { background: transparent; }
+
+
+/*TABLE COLOR A*/
+table.default.color_a caption { color: var(--color_ad2); }
+
+table.default.color_a td { border-bottom: 1px solid var(--gray2); }
+
+table.default.color_a thead th {
+    background: var(--color_al5);
+    border-top: 1px solid var(--color_ad2);
+    border-bottom: 1px solid var(--color_ad2);
+    color: var(--color_ad2);
+}
+
+table.default.color_a thead td { background: transparent; }
+
+table.default.color_a tfoot th { background: transparent; }
+
+table.default.color_a tfoot {
+    color: var(--white);
+    background: var(--color_ad1);
+}
+
+/*TABLE COLOR C*/
+table.default.color_c caption { color: var(--color_cd2); }
+
+table.default.color_c td { border-bottom: 1px solid var(--gray2); }
+
+table.default.color_c thead th {
+    background: var(--color_cl5);
+    border-top: 1px solid var(--color_cd2);
+    border-bottom: 1px solid var(--color_cd2);
+    color: var(--color_cd2);
+}
+
+table.default.color_c thead td { background: transparent; }
+
+table.default.color_c tfoot th { background: transparent; }
+
+
+/*-----------------------------------------------------------  DEFAULT FORM   ------------------*/
+form.default legend { color: var(--color_ad1); }
+
+form.default label { color: var(--color_pd2); }
+
+form.default input,
+form.default select,
+form.default textarea { border-color: var(--gray2); }
+
+form.default input[type="submit"], 
+form.default input[type="button"],
+.form_buttons a,
+a.button {
+    border-color: var(--color_p);
+	color: var(--white);
+    background-color: var(--color_p);
+}
+
+form.default input[type="submit"]:hover, 
+form.default input[type="button"]:hover,
+.form_buttons a:hover,
+a.button:hover, 
+a.button.selected {
+	border-color: var(--color_al1);
+	color: white;
+    background-color: var(--color_al1);
+}
+
+a.button01 {
+    border-color: var(--color_al1);
+    color: var(--color_al1);
+    background: var(--white)
+}
+
+a.button01:hover {
+	border-color: var(--white);
+	color: var(--white);
+    background: var(--color_al1)
+}
+
+input.button {
+    color: white;
+    background-color: var(--color1000);
+}
+
+input.button:hover { background-color: var(--color4000); }
+
+form.default .buttons_field_group #remove_fgroup {
+    background-color: transparent;
+    color: var(--color_a);
+    border-color: var(--color_a);
+}
+
+form.default .buttons_field_group #add_fgroup {
+    background-color: var(--color_p);
+    color: white;
+    border-color: var(--color_p);
+}
+
+form.default .buttons_field_group #add_fgroup:hover {
+    border-color: transparent;
+    background: var(--color_a);
+    color: white;
+}
+
+form.default .buttons_field_group #remove_fgroup:hover {
+    border-color: transparent;
+    background: var(--color_p);
+    color: white;
+}
+
+/*------------------------------------------------------------  CLEAN FORM  ---------------------*/
+.clean input, .clean textarea { border-color: var(--gray4); }
+
+.clean .submit { background: var(--color_c); }
+
+/*------------------------------------------------------------  FLOATING FORM  ---------------------*/
+.Floating input, .Floating textarea { border-color: var(--gray4); }
+
+.Floating .submit { background: var(--color_c); }
+
+.Floating .submit:hover { background: var(--color_cl2); }
+
+/*-----------------------------------------------------------  SCROLL TO TOP   ------------------*/
+#scrollToTop { color: var(--color5000); }
+
+
+/*-----------------------------------------------------------  HMENU01   ------------------------*/
+@media (min-width: 1180px) {
+    /* FIRST LEVEL    -----------------*/
+    .hmenu01 ul#main-menu > li > a {
+		background-color: transparent; 
+        color: var(--white);
+    }    
+    	
+	.hmenu01 ul#main-menu > li > a.selected,
+	.hmenu01 ul#main-menu > li > a.highlighted,
+	.hmenu01 ul#main-menu > li > a.current,
+    .hmenu01 ul#main-menu > li > a:hover {
+        color: #bae8ff;
+ }
+	
+    /* SECOND+ LEVEL    ---------------*/
+    .hmenu01 ul#main-menu > li ul { box-shadow: 3px 3px rgba(80,80,80,0.2); }
+
+    .hmenu01 ul#main-menu > li > ul li a { 
+		background-color: #044464db; 
+		color: var(--white); 
+        border-bottom: 1px solid var(--white);
+    }
+
+    .hmenu01 ul#main-menu > li ul li a:hover{ 
+		background-color: var(--color_p); 
+	}        
+}
+
+@media (max-width: 1179px) {
+    .hmenu01 > ul#main-menu { background-color: var(--color_a); }
+
+    /* FIRST LEVEL    -----------------*/
+    .hmenu01 ul#main-menu > li > a {
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .hmenu01 ul#main-menu > li > a.current,
+	.hmenu01 ul#main-menu > li > a.highlighted { 
+		border-bottom: none;
+		background-color: var(--color_p);
+	}    
+    
+    .hmenu01 ul#main-menu > li { 
+		background-color: rgba(0,0,0,0.8);
+	}
+
+    .hmenu01 ul#main-menu > li > ul li a:hover { 
+        color: var(--white);
+		border-bottom-color: var(--white);
+		background: var(--color_al3);
+    }
+
+    /* SECOND+ LEVEL    ---------------*/
+    .hmenu01 ul#main-menu > li ul { margin: 0 10px 15px; }
+
+    .hmenu01 ul#main-menu > li > ul li a { 
+        color: white; 
+        border-bottom: 1px dotted var(--white);
+    }
+
+    .hmenu01 ul#main-menu > li > ul li a.current { color: var(--color_ad2); }	
+	
+}
+
+/* hamburger icon */
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after {
+    background-color: var(--color_p);
+}
+
+
+/*-----------------------------------------------------------  VMENU01   -----------------------*/
+.vmenu01 > h1 {
+	/* background-color: rgb(93,14,14);
+    border-top: 1px solid rgb(119, 124, 145);*/
+	color: var(--gray4);
+	
+}
+
+.mbar { background-color: rgba(0,0,0,0.03); }
+
+.vmenu01 > ul > li > a {
+    color: var(--gray4);
+	border-bottom: 1px solid #eeeded;
+}
+
+.vmenu01 a:hover,
+.vmenu01 a.selected{ 
+    color: var(--color_p); 
+    border-color: var(--color_p); 
+}
+
+.vmenu01 > ul > li ul li { border-bottom: dashed 1px var(--gray2); }
+
+/*-----------------------------------------------------------  PAGE INDEX ----------------------*/
+.content .box_index { border-color: var(--color_a); }
+
+.content .box_index h1 {
+    background-color: var(--color_p);
+    color: var(--white);
+}
+
+.content .box_index .page_index {
+    background: var(--gray1);
+}
+
+.content .box_index .page_index a {
+    border-color: var(--color_a) !important;
+}
+
+.content .box_index .page_index a:hover {
+    color: var(--color_a) !important;
+}
+
+.index_this h3 { color: var(--color_c); }
+
+.index_back a { color: var(--color_cl2); }
+
+.index_back a:hover { color: var(--color_cl3); }
+
+/*---------------------------------------------  MASS INTENTIONS   ------------------------------*/
+.mass_intentions dl dt h2 { color: var(--color_a); }
+
+.mass_intentions dl dt p {
+    background: var(--color_a);
+    color: white;
+}
+
+.mass_intentions dl dd { border-left-color: var(--color_a); }
+
+.mass_intentions dl dd h2 {color: var(--color_pd1); }
+
+/*------------------------------------------------  READINGS   ----------------------------------*/
+#readings h2, #readings_spanish .rsslayer h2 {
+    background: var(--color_p);
+}
+
+#readings h2:hover, #readings_spanish .rsslayer h2:hover {
+    background: var(--color_a);
+}
+
+#readings h4, #readings_spanish h4 {
+    color: var(--color_pl2);
+}
+
+/*----------------------------------------------  NEW MASS INTENTIONS  -----------------------------------*/
+
+#mass_intention #mi_steps .fx_3 {
+    background: var(--gray1);
+}
+
+#mass_intention #mi_steps .fx_3 p {
+    color: var(--gray3);
+}
+
+#mass_intention #mi_steps .fx_3.selected {
+    background: var(--color_p);
+}
+
+#mass_intention #mi_steps .fx_3.selected p {
+    color: white;
+}
+
+#mass_intention #mi_steps .fx_3.selected::before {
+    color: var(--color_a);
+    background: white;
+}
+
+#mass_intention #mi_steps .fx_3.checked {
+    background: #fffaf6;
+}
+
+#mass_intention #mi_steps .fx_3.checked::before {
+    color: white;
+    background: var(--color_a);
+}
+
+#mass_intention #mi_steps .fx_3.checked p a {
+    color: var(--color_a);
+}
+
+#masses dl input:checked + label,
+#masses dl label:hover {
+	border: solid 1px var(--color_p) !important;
+	color: var(--color_p) !important;
+	background-color: var(--color_pl5) !important;
+}
+
+#masses dl input:checked + label::before {
+	background: var(--color_p) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

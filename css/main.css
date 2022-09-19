@@ -181,7 +181,7 @@ div#content-network div {
 	height: 30px;
 	float: right;
 	margin-right: 2px;
-	background: url(../images/buttons-social.png);
+	background: url(https://www.sjn-miami.org/ctm/31250/projects/SJN/layout01/images/buttons-social.png);
 }
 
 div#face {
@@ -211,6 +211,7 @@ div#inst:hover {
 header section {
 	display: flex;
 	align-items: center;
+	/* list-style-type: none; */
 }
 
 #logo {
@@ -248,11 +249,12 @@ a#logo:hover img {
 	}
 
 	header>section {
-		height: 64px;
+		height: 80px;
 	}
 
 	header>nav>section {
 		justify-content: center;
+		/* list-style-type: none; */
 	}
 
 	#hm_buttons {
@@ -366,15 +368,17 @@ a#logo:hover img {
 
 header {
 	position: relative;
-	background: white;
+	background: #ececec;
+	/* color: black; */
 }
 
 header nav {
-	height: 36px;
+	height: 57px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	font-family: 'Work Sans', sans-serif;
+	/* list-style-type: none; */
 }
 
 #top_buttons {
