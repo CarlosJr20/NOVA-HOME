@@ -168,10 +168,16 @@ header>nav>section {
 	float: right !important;
 	/* padding: 0 0.7em !important; */
 	margin-right: 5px;
+	border-color: #044565;
+	color: var(--white);
+	background-color: #044565;
+	float: right !important;
+	padding: 0px 25px 0px 25px !important;
+	margin-right: 5px;
 }
 
 div#content-network {
-	position: absolute;
+    position: absolute;
     top: 70px;
     right: 9px;
 }
